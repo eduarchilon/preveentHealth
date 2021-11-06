@@ -1,0 +1,128 @@
+
+                     /*------aside-------*/
+.cont__aside{
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+
+}
+.cont__aside-mapa{
+    position: relative;
+    height: 0;
+    max-height: 100px;
+}
+.cont__aside-mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 250px;
+    z-index: -1;
+}
+.cont__aside-h2{
+    margin-bottom: 30px;
+}
+                        /*------main-------*/
+
+.cont__main{
+    display: flex;
+
+}
+.cont__main-form{
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 40px;
+
+}
+.cont__main-datos{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+.cont__main-form input{
+    margin: 15px;
+    height: 3em;
+    width: 30em;
+    border: none;
+    border-bottom: 4px solid #1c7;
+}
+textarea{
+    margin: 15px;
+    height: 10em;
+    width: 30em;
+    border: none;
+    resize: none;
+    border-bottom: 4px solid #1c7;
+}
+.cont__main__datos-li li{
+    margin: 15px;
+    display: flex
+
+}
+.cont__main__datos-li{
+    margin-top: 80px;
+}
+#boton:hover{
+    background: #04ebad;
+}
+#boton{
+    border: none;
+    background: #1c7;
+}
+.cont__main-form input,textarea:focus{
+    outline: none;
+}
+#boton:focus{
+    outline:solid;
+}
+
+            /*--------responsive--------*/
+
+@media only screen and (max-width: 900px)and (min-width:700px){
+    .cont__main-form input{
+        width: 15em;
+    }
+    .cont__main-form textarea{
+        width: 15em;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+
+    .cont__main-form input{
+        width: 90vw;
+    }
+    .cont__main-form textarea{
+        width: 90vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .cont__main{
+        display: block;
+    }
+    .cont__main-form{
+
+    }
+    .cont__main-datos{
+        width: 70vw;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cont__main__datos-li li{
+        justify-content: center
+    }
+
+                /*--------aside------*/
+
+    .cont__aside-h2{
+        margin-bottom: 80px;
+    }
+    .cont__aside-mapa iframe{
+        top: -60px;
+    }
+}
+

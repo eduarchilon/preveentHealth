@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <link rel="shortcut icon" href="img/icono.ico">
+    <meta charset="UTF-8">
+    <title>PREVENT=HEALTH</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hojadeestilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="cont__header">
+            <div class="cont__header-logo">
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo"> </a>
+            </div>
+            <div class="cont__header-barra">
+                <div class="cont__header-lupa">
+                    <label class="fas fa-search">
+                        <input list="Enfermedades" name="Enfermedades" />
+                    </label>
+                </div>
+                <div class="cont__header-busqueda">
+                    <datalist id="Enfermedades">
+                        <option value="gripe estacional">
+                        <option value="Coronavirus -COVID19">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+       <input type="checkbox" id="boton-menu">
+       <label for="boton-menu"><img src="img/menu.png" alt="botn-menu"></label>
+        <div class="cont__nav">
+            <ul class="cont__nav-ul">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="listado-enfermedades.html">ENFERMEDADES</a></li>
+                <li><a href="detalle-enfermedades.html">VACUNACÍON</a></li>
+                <li><a href="mapa.html">HOSPITALES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="calendario.html">CALENDARIO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside>
+        <section class="cont__aside">
+            <div class="cont__aside-h2">
+                <h2>UBICACION</h2>
+            </div>
+            <div class="cont__aside-mapa">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.669877234847!2d-58.56784012337116!3d-34.671495220872835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1601387158029!5m2!1ses!2sar" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </aside>
+    <main>
+        <div class="cont__main">
+            <section class="cont__main-form">
+                <form action="#" method="get" onsubmit="return validar()">
+                    <h1>CONTACTO</h1>
+                    <div>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" >
+                    </div>
+                    <div>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" >
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email" >
+                    </div>
+                    <div>
+                       <input type="tel" id="telefono" name="telefono" placeholder="telefono (opciona)">
+                    </div>
+                    <div>
+                        <textarea name="consulta" id="consulta" placeholder="ingrese su consulta" onkeyup="contarCaracteres()" maxlength="1000"></textarea>
+                        <p><span id="caracteres"></span> caracteres restantes</p>
+                    </div>
+                    <input type="submit"  id="boton" value="Enviar">
+                    <div id="mensajeDeError"></div>
+                </form>
+            </section>
+            <section class="cont__main-datos">
+                <h1>DATOS DE CONTACTO</h1>
+                <div class="cont__main__datos-li">
+                    <ul>
+                        <li class="a">Direccion: Calle falsa 123</li>
+                        <li>Telefono: 1234 - 5678</li>
+                        <li>Celular: 15-1234-5678</li>
+                        <li>Email: preventhealth@gmail.com</li>
+                        <li>Web: preventhealth.com</li>
+                    </ul>
+                </div>
+                <div class="cont__main__datos-redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="faceboock"></a>
+
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+
+                    <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="cont__footer">
+            <div class="cont__footer-grupo">
+                <h3 class="footer__h3">Datos del grupo:</h3>
+                <ul>
+                    <li class="footer__li">Tomas Viteritti - 42.148.096</li>
+                    <li class="footer__li">Victor Orue - 38.445.712</li>
+                    <li class="footer__li">Eduar Chilon - 94.221.723</li>
+                </ul>
+            </div>
+            <div class="cont__footer-menuInferior">
+                <h3 class="footer__h3">Menu inferior:</h3>
+                <ul>
+                    <li class="footer__li"><a href="listado-enfermedades.html">Enfermedades</a></li>
+                    <li class="footer__li"><a href="detalle-enfermedades.html">Vacunas</a></li>
+                    <li class="footer__li"><a href="mapa.html">Hospitales</a></li>
+                    <li class="footer__li"><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="cont__footer-redes">
+                <h3 class="footer__h3">Redes sociales:</h3>
+                <div class="cont__footer__redes-img">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="faceboock"></a>
+
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+
+                    <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
